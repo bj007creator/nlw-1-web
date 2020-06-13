@@ -1,0 +1,62 @@
+#home-page{
+    display: grid;
+    position: relative;
+    grid-template-columns: 2fr 3fr 2fr;
+    height: 100vh;
+}
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-right > div:first-child{
+    margin-top: 100px;
+}
+.content-right > div > img{
+    width: 500px;
+    height: 200px;
+}
+.flex-wave{
+    position: absolute;
+    top : 0;
+    left: 0;
+    opacity: 1;
+}
+
+.content-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background: #005;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition-duration: .2s;
+}
+.button > span.icon {
+    background: linear-gradient(180deg, #008, #002);
+    height: 100%;
+    display: flex;
+    align-items : center;
+    padding: 0 18px;
+    border-radius: 10px 0 0 10px;
+}
+.button > span.press {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0 auto;
+    
+}
+
+.button:hover {
+    border-bottom: 5px solid #002;
+    box-shadow: 0 0 10px #008;
+}
